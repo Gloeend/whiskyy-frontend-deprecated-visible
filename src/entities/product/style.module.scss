@@ -1,0 +1,21 @@
+.preview {
+  object-fit: contain;
+}
+
+.product {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2.375rem;
+  background: var(--color-white-100);
+  border-radius: var(--radius-general);
+  border: 1px solid var(--color-neutral-200);
+
+  h3 {
+    font-size: var(--variable-20px);
+    color: var(--color-neutral-900);
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+}

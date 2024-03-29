@@ -1,0 +1,91 @@
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  & > button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--color-neutral-350);
+    font-size: var(--variable-17px);
+    font-weight: 500;
+    background: var(--color-neutral-100);
+    border: 1px solid var(--color-neutral-200);
+    border-radius: var(--radius-general);
+    padding: var(--variable-24px) var(--variable-22px);
+    transition: var(--transition-175) all;
+  }
+
+  &.active > button {
+    color: var(--color-neutral-900);
+    background: var(--color-white-100);
+  }
+}
+
+.select {
+  margin-top: .5rem;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  transition: var(--transition-175) opacity, var(--transition-175) z-index;
+  background: var(--color-white-100);
+  border: 1px solid var(--color-neutral-150);
+  padding: .5rem;
+  box-shadow: 0 16px 24px 0 #3D141B1A;
+  border-radius: var(--radius-general);
+  display: flex;
+  flex-flow: column;
+
+  &.active {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.list {
+  max-height: 256px;
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  width: .125rem;
+}
+
+.list::-webkit-scrollbar-track {
+}
+.list::-webkit-scrollbar-thumb {
+  width: .125rem;
+  background: var(--color-neutral-300);
+
+}
+
+.label {
+  padding: 14.5px var(--variable-22px);
+  display: grid;
+  grid-template-columns: 1fr fit-content(100%);
+  background: var(--color-neutral-100);
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.label input {
+  width: 100%;
+}
+
+.button {
+  font-size: var(--variable-17px);
+  padding: 1rem var(--variable-22px);
+  color: var(--color-neutral-900);
+  font-weight: 500;
+}
+
+.searchIcon path {
+  stroke: var(--color-neutral-350);
+}
+.searchIcon {
+  min-width: var(--variable-20px);
+  min-height: var(--variable-20px);
+}

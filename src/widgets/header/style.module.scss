@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  padding: var(--variable-20px) var(--variable-24px);
+  display: flex;
+  align-items: center;
+  grid-gap: .5rem;
+
+  &__nav {
+    margin-left: auto;
+    margin-right: 5%;
+    ul {
+      display: flex;
+      grid-gap: var(--variable-24px);
+      justify-self: center;
+    }
+  }
+}

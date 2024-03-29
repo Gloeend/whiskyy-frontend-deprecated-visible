@@ -1,0 +1,17 @@
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  grid-gap: 1rem;
+}
+
+.pagination__item {
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: var(--transition-175) all;
+}
+
+.pagination__item.active {
+  border-color: var(--color-primary);
+}
